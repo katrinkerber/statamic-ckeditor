@@ -19,6 +19,8 @@ CKEDITOR.editorConfig = function( config ) {
   // toolbar customisations
     // use custom styles dropdown
         //config.stylesSet = 'custom_styles';
+    // force plain text on paste
+        //config.forcePasteAsPlainText = true;
     // example of a custom toolbar - to see all available toolbar buttons see http://docs.cksource.com/CKEditor_3.x/Developers_Guide/Toolbar
         // config.toolbar = [
         //     { name: 'styles', items : [ 'Styles' ] },

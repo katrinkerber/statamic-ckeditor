@@ -20,7 +20,7 @@ Upload the *ckeditor* folder to Statamic's *_add-ons* folder.
 ### CKEditor
 By default the editor comes with the whole shebang of toolbar buttons. If you dislike red and yellow highlighted text as much as me and don't want your client going editing crazy, you'll probably want to change this.
 
-Open *_add-ons/ckeditor/config.js*. Lines 6 - 31 contain examples of how you could customise the styles dropdown and toolbar. Uncomment them, change them, delete them - the editor configuration world is your oyster!
+Open *_add-ons/ckeditor/config.js*. Lines 6 - 33 contain examples of how you could customise the styles dropdown and toolbar. Uncomment them, change them, delete them - the editor configuration world is your oyster!
 
 ### PGRFileManager
 To ensure that PGRFileManager references the right folder and shows thumbnails, follow these steps:
