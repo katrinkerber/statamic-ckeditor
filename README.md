@@ -11,7 +11,7 @@ It's been tested with Statamic v1.4.2 and v1.5 (build 8).
 ## Important notes
 1. This fieldtype clashes with the Redactor fieldtype. Once you have installed it and use a Redactor field, the field will show the CKEditor toolbar on field focus.I made this add-on to replace Redactor, so this is not an issue for me. If you want to keep using Redactor in your publish forms, feel free to put on your de-bugging pants and dive into the code to fix this. Do please let me know of the solution when you come across it :)
 
-2. There is known issues when the editor is part of a grid field: When deleting a row and then adding one the ckeditor create function causes an error. Overall the handling of this field in a grid is buggy and I have an idea how to fix this; [it's on my list](#to-dos). <del>If you fancy jumping in and fixing this, I would love your help.</del>
+2. <del>There is known issues when the editor is part of a grid field: When deleting a row and then adding one the ckeditor create function causes an error. Overall the handling of this field in a grid is buggy and I have an idea how to fix this; [it's on my list](#to-dos). If you fancy jumping in and fixing this, I would love your help.</del>
 **UPDATE:** This is fixed for Statamic v1.5.
 
 ## Installation
