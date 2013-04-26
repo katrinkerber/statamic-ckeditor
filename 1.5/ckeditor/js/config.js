@@ -41,8 +41,8 @@ CKEDITOR.editorConfig = function( config ) {
     // initate plugin
     config.extraPlugins = 'pgrfilemanager';
     // browse and upload paths - if you are running yoru Statamic installation in a subdirectory, make sure to include it in the path
-    config.filebrowserBrowseUrl = '/statamic-refinery-1.5/_add-ons/ckeditor/js/plugins/pgrfilemanager/PGRFileManager.php?langCode=en&type=Link';
-    config.filebrowserImageBrowseUrl = '/statamic-refinery-1.5/_add-ons/ckeditor/js/plugins/pgrfilemanager/PGRFileManager.php?langCode=en&type=Image';
+    config.filebrowserBrowseUrl = '/_add-ons/ckeditor/js/plugins/pgrfilemanager/PGRFileManager.php?langCode=en&type=Link';
+    config.filebrowserImageBrowseUrl = '/_add-ons/ckeditor/js/plugins/pgrfilemanager/PGRFileManager.php?langCode=en&type=Image';
     // the normal CKEditor upload tab and behaviour doesn't work with PGRFileManger
     // haven't figured out how to fix this, so for now we hide the 'Upload' tab by using the 'null' value
     // to upload new files, use the 'Browse Server' button and use PGRFileManager upload new files
