@@ -3,6 +3,9 @@
  * For licensing, see LICENSE.html or http://ckeditor.com/license
  */
 
+// If your Statamic installation runs in a subdirectory, comment out the line below and specify it
+// CKEDITOR.config.contentsCss="/your-subdirectory/_add-ons/ckeditor/css/contents.css";
+
 // Example of a custom 'Styles' dropdown - for info and options see http://docs.ckeditor.com/#!/guide/dev_styles
     // CKEDITOR.stylesSet.add( 'custom_styles', [
     //     // Block-level styles
@@ -37,7 +40,7 @@ CKEDITOR.editorConfig = function( config ) {
   // pgrfilemanager plugin
     // initate plugin
     config.extraPlugins = 'pgrfilemanager';
-    // browse and upload paths
+    // browse and upload paths - if you are running yoru Statamic installation in a subdirectory, make sure to include it in the path
     config.filebrowserBrowseUrl = '/_add-ons/ckeditor/js/plugins/pgrfilemanager/PGRFileManager.php?langCode=en&type=Link';
     config.filebrowserImageBrowseUrl = '/_add-ons/ckeditor/js/plugins/pgrfilemanager/PGRFileManager.php?langCode=en&type=Image';
     // the normal CKEditor upload tab and behaviour doesn't work with PGRFileManger
