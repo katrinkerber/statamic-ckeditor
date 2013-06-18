@@ -21,25 +21,32 @@ class Hooks_ckeditor extends Hooks {
           }
 
           // initiate CKEditor for field(s) in a newly added grid row
-          function newRowEditor() {
+          function newRowEditor() {    
+
+            // get the right grid field for the clicked 'add row' button
+            var thisGridTable = $(this).siblings('table.grid');
+            
             setTimeout(function() {
-              var newRowCell = $('table.grid tbody tr:last td.cell-ckeditor');
+              // select ckeditor cell in new row
+              var newRowCell = thisGridTable.find('tbody tr:last td.cell-ckeditor');
+
               // double-check that new row doesn't contain editor already
               if ( newRowCell.not(':has(div.cke)') ) {
                 newRowCell.find('textarea.ckeditor').each(function(){
                   CKEDITOR.replace( $(this).attr('name') );
                 });
               }
+
             }, 50);
+
           }
 
           $(document).ready(function() {
 
             initiateCKEditors();
 
-            $('.grid-add-row').click(function() {
-              newRowEditor();
-            });
+            $('.grid-add-row').click(newRowEditor);
+
           });
         </script>";
         
