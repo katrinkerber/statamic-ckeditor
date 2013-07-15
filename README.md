@@ -36,8 +36,8 @@ If you are running Statamic in a subdirectory, follow these steps:
 2. Go to `_add-ons/ckeditor/js/plugins/filemanager/scripts/filemanager.config.js` and edit the `fileRoot` value on **line 18**: `"fileRoot": "/yoursubdirectory/assets/"`.
 3. Edit the file browser paths declared on **lines 40 + 41** in the `_add-ons/ckeditor/js/config.js` file:
 
-    config.filebrowserBrowseUrl = 'yoursubdirectory/_add-ons/ckeditor/js/plugins/filemanager/index.html';
-    config.filebrowserImageBrowseUrl = 'yoursubdirector/_add-ons/ckeditor/js/plugins/filemanager/index.html';
+    `config.filebrowserBrowseUrl = 'yoursubdirectory/_add-ons/ckeditor/js/plugins/filemanager/index.html';`
+    `config.filebrowserImageBrowseUrl = 'yoursubdirector/_add-ons/ckeditor/js/plugins/filemanager/index.html';`
 
 ### Declaring a CKEditor fieldtype
 Declare **type: ckeditor** in your fieldset settings.
