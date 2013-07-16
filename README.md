@@ -20,7 +20,7 @@ Upload the `ckeditor` folder to your Statamic's `_add-ons` folder.
 ### CKEditor
 By default the editor comes with the whole shebang of toolbar buttons. If you dislike red and yellow highlighted text as much as me and don't want your client going editing crazy, you'll probably want to change this.
 
-Open `_add-ons/ckeditor/js/config.js` and refer to **lines 10 - 18** and **lines 23 - 36**. They contain examples of how you can customise the styles dropdown and the available buttons in the toolbar. Uncomment them, change them, delete them - the editor configuration world is your oyster! 
+Open `_add-ons/ckeditor/js/config.js` and refer to **lines 12 - 20** and **lines 24 - 38**. They contain examples of how you can customise the styles dropdown and the available buttons in the toolbar. Uncomment them, change them, delete them - the editor configuration world is your oyster! 
 
 Refer to the [CKEditor documentation](http://docs.cksource.com/CKEditor_3.x/Developers_Guide/Toolbar) for more help and options.
 
