@@ -3,8 +3,10 @@
  * For licensing, see LICENSE.html or http://ckeditor.com/license
  */
 
-// If your Statamic installation runs in a subdirectory, include it in the path below
-// CKEDITOR.config.contentsCss="/your-subdirectory/_add-ons/ckeditor/css/contents.css";
+// Correct path to CSS
+CKEDITOR.config.contentsCss="/_add-ons/ckeditor/css/contents.css";
+    // if you are running in a subdirectory, add this too like so:
+    // CKEDITOR.config.contentsCss="/your_subdirectory/_add-ons/ckeditor/css/contents.css";
 
 // Example of a custom 'Styles' dropdown - for info and options see http://docs.ckeditor.com/#!/guide/dev_styles
     // CKEDITOR.stylesSet.add( 'custom_styles', [
