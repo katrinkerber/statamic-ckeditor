@@ -3,11 +3,19 @@ Copyright (c) 2003-2013, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.html or http://ckeditor.com/license
 */
 
-body
+.cke_inner {
+  /* Font */
+  font-family: sans-serif, Arial;
+  font-size: 13px;
+  line-height: 1.6em;
+}
+
+body.cke_editable
 {
-	/* Font */
-	font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
-	font-size: 12px;
+  /* Font */
+  font-family: sans-serif, Arial;
+  font-size: 13px;
+  line-height: 1.6em;
 
 	/* Text color */
 	color: #333;
@@ -16,12 +24,6 @@ body
 	background-color: #fff;
 
 	margin: 20px;
-}
-
-.cke_editable
-{
-	font-size: 13px;
-	line-height: 1.6em;
 }
 
 blockquote
