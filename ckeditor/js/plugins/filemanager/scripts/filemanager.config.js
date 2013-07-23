@@ -1,5 +1,5 @@
 {
-		"_comment": "IMPORTANT : go to the wiki page to know about options configuration https://github.com/simogeo/Filemanager/wiki/Filemanager-configuration-file",
+        "_comment": "IMPORTANT : go to the wiki page to know about options configuration https://github.com/simogeo/Filemanager/wiki/Filemanager-configuration-file",
     "options": {
         "culture": "en",
         "lang": "php",
@@ -15,7 +15,7 @@
         "chars_only_latin": true,
         "dateFormat": "d M Y H:i",
         "serverRoot": true,
-        "fileRoot": false,
+        "fileRoot": "assets/",
         "relPath": false,
         "logger": false,
         "plugins": []
@@ -55,7 +55,8 @@
     },
     "exclude": {
         "unallowed_files": [
-            ".htaccess"
+            ".htaccess",
+            "index.html"
         ],
         "unallowed_dirs": [
             "_thumbs",
