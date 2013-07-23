@@ -30,7 +30,7 @@ By default Filemanager will use the `/assets/` folder to browse and upload image
 If you need to change this, go to `_add-ons/ckeditor/js/plugins/filemanager/scripts/filemanager.config.js` and edit the `fileRoot` value on **line 18**.
 
 #### Editing the .htaccess file
-If you are using Statamic’s provided code for your `.htaccess` file, which includes this line of code
+If you are using Statamic’s provided code in your `.htaccess` file, which includes this line of code
 
     `Rewriterule ^(.*)?\.html$ - [F,L]`
 
@@ -49,7 +49,7 @@ I use the following block of code to protect system and template files instead:
     Rewriterule ^(.*)?\.yaml$ - [F,L]
     RewriteRule ^(.*/)?\.git+ - [F,L]
 
-I cannot guarantee that this is the best way and if you know of a better one, then please do let me know.
+I cannot guarantee that this is the best way, so do use it at your own risk. If you know of a better solution which allows access to the filemanager `index.html` file, then please do let me know.
 
 ### Running in a subdirectory
 If you are running Statamic in a subdirectory, follow these steps:
