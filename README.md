@@ -1,5 +1,6 @@
 # Statamic CKEditor add-on
 This is a [CKEditor](http://ckeditor.com) fieldtype add-on for [Statamic](http://statamic.com/).
+
 ![Customised CKEditor field](http://katrinkerber.com/assets/screenshot-ckeditor.png)
 
 It has been tested with Statamic v1.7.1. 
