@@ -3,7 +3,7 @@ class Fieldtype_ckeditor extends Fieldtype {
 
   var $meta = array(
     'name'       => 'CKEditor',
-    'version'    => '1.2',
+    'version'    => '1.3',
     'author'     => 'Katrin Kerber',
     'author_url' => 'http://katrinkerber.com'
   );
