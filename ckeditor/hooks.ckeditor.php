@@ -4,7 +4,7 @@ class Hooks_ckeditor extends Hooks {
   public function control_panel__add_to_head()
   {
       if (URL::getCurrent(false) == '/publish') {
-        $cssPath = Config::getSiteRoot()."/_add-ons/ckeditor/contents.css";
+        $cssPath = Config::getSiteRoot()."_add-ons/ckeditor/contents.css";
         return '<link rel="stylesheet" href="' . $cssPath . '" />';
       }
   }
@@ -12,7 +12,7 @@ class Hooks_ckeditor extends Hooks {
   public function control_panel__add_to_foot()
   {
       if (URL::getCurrent(false) == '/publish') {
-        $jsPath = Config::getSiteRoot()."/_add-ons/ckeditor/ckeditor.js"; 
+        $jsPath = Config::getSiteRoot()."_add-ons/ckeditor/ckeditor.js"; 
         $html = '<script src="' . $jsPath . '"></script>';
         
         $html .= "<script>
