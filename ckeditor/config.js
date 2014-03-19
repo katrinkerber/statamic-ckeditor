@@ -33,6 +33,7 @@ CKEDITOR.editorConfig = function( config ) {
 
 	// Example of a custom toolbar - to see all available toolbar buttons see http://docs.cksource.com/CKEditor_3.x/Developers_Guide/Toolbar
     // config.toolbar = [
+    //  { name: 'clipboard', items : [ 'Paste','PasteText','PasteFromWord','-','Undo','Redo' ] },
     //	{ name: 'styles', items : [ 'Styles' ] },
     //	{ name: 'removeformat', items : [ 'RemoveFormat' ] },
     //	{ name: 'basics', items : [ 'Bold','Italic','Strike','Subscript','Superscript' ] },
