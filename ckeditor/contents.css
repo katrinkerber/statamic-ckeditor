@@ -3,28 +3,19 @@ Copyright (c) 2003-2014, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.md or http://ckeditor.com/license
 */
 
-body.cke_editable
+.cke_editable
 {
 	/* Font */
-	font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
-	font-size: 12px;
-
-	/* Text color */
+	font-family: Helvetica, Arial, sans-serif;
+	/* declare in px to fix Webkit/Blink bug that adds a span tag with line-height style - http://dev.ckeditor.com/ticket/9998?cversion=1&cnum_hist=45#comment:52 */
+	font-size: 13px;
+	line-height: 18px;
 	color: #333;
-
-	/* Remove the background color to make it transparent */
 	background-color: #fff;
-
 	margin: 20px;
 }
 
-.cke_editable
-{
-	font-size: 13px;
-	line-height: 1.6;
-}
-
-blockquote
+.cke_editable blockquote
 {
 	font-style: italic;
 	font-family: Georgia, Times, "Times New Roman", serif;
@@ -48,12 +39,14 @@ blockquote
 	border-right-width: 5px;
 }
 
-a
+.cke_editable a
 {
 	color: #0782C1;
 }
 
-ol,ul,dl
+.cke_editable ol,
+.cke_editable ul,
+.cke_editable dl
 {
 	/* IE7: reset rtl list margin. (#7334) */
 	*margin-right: 0px;
@@ -61,19 +54,13 @@ ol,ul,dl
 	padding: 0 15px;
 }
 
-h1,h2,h3,h4,h5,h6
-{
-	font-weight: normal;
-	line-height: 1.2;
-}
-
-hr
+.cke_editable hr
 {
 	border: 0px;
 	border-top: 1px solid #ccc;
 }
 
-img.right
+.cke_editable img.right
 {
 	border: 1px solid #ccc;
 	float: right;
@@ -81,7 +68,7 @@ img.right
 	padding: 5px;
 }
 
-img.left
+.cke_editable img.left
 {
 	border: 1px solid #ccc;
 	float: left;
@@ -89,23 +76,23 @@ img.left
 	padding: 5px;
 }
 
-pre
+.cke_editable pre
 {
 	white-space: pre-wrap; /* CSS 2.1 */
 	word-wrap: break-word; /* IE7 */
 }
 
-.marker
+.cke_editable .marker
 {
 	background-color: Yellow;
 }
 
-span[lang]
+.cke_editable span[lang]
 {
    font-style: italic;
 }
 
-figure
+.cke_editable figure
 {
 	text-align: center;
 	border: solid 1px #ccc;
@@ -116,7 +103,7 @@ figure
 	display: block; /* For IE8 */
 }
 
-figure figcaption
+.cke_editable figure figcaption
 {
 	text-align: center;
 	display: block; /* For IE8 */
