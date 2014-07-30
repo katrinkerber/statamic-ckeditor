@@ -1,6 +1,10 @@
 Statamic CKEditor add-on - Changelog
 ====================
 
+## Version 1.4 - 30/07/2014
+* Updated CKEditor to 4.4.3
+* Replaced Image plugin with [Enhanced Image](http://ckeditor.com/addon/image2)
+
 ## Version 1.3 - 19/02/2014
 * Updated CKEditor to 4.3.2
 * De-coupled the Filemanager plug-in. Head over to the [Filemanager](https://github.com/katrinkerber/statamic-filemanager) add-on to get it.

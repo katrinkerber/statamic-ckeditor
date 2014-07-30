@@ -3,19 +3,28 @@ Copyright (c) 2003-2014, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.md or http://ckeditor.com/license
 */
 
-.cke_editable
+body
 {
 	/* Font */
-	font-family: Helvetica, Arial, sans-serif;
-	/* declare in px to fix Webkit/Blink bug that adds a span tag with line-height style - http://dev.ckeditor.com/ticket/9998?cversion=1&cnum_hist=45#comment:52 */
-	font-size: 13px;
-	line-height: 18px;
+	font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+	font-size: 12px;
+
+	/* Text color */
 	color: #333;
+
+	/* Remove the background color to make it transparent */
 	background-color: #fff;
+
 	margin: 20px;
 }
 
-.cke_editable blockquote
+.cke_editable
+{
+	font-size: 13px;
+	line-height: 1.6;
+}
+
+blockquote
 {
 	font-style: italic;
 	font-family: Georgia, Times, "Times New Roman", serif;
@@ -39,28 +48,32 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 	border-right-width: 5px;
 }
 
-.cke_editable a
+a
 {
 	color: #0782C1;
 }
 
-.cke_editable ol,
-.cke_editable ul,
-.cke_editable dl
+ol,ul,dl
 {
 	/* IE7: reset rtl list margin. (#7334) */
 	*margin-right: 0px;
 	/* preserved spaces for list items with text direction other than the list. (#6249,#8049)*/
-	padding: 0 15px;
+	padding: 0 40px;
 }
 
-.cke_editable hr
+h1,h2,h3,h4,h5,h6
+{
+	font-weight: normal;
+	line-height: 1.2;
+}
+
+hr
 {
 	border: 0px;
 	border-top: 1px solid #ccc;
 }
 
-.cke_editable img.right
+img.right
 {
 	border: 1px solid #ccc;
 	float: right;
@@ -68,7 +81,7 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 	padding: 5px;
 }
 
-.cke_editable img.left
+img.left
 {
 	border: 1px solid #ccc;
 	float: left;
@@ -76,23 +89,27 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 	padding: 5px;
 }
 
-.cke_editable pre
+pre
 {
 	white-space: pre-wrap; /* CSS 2.1 */
 	word-wrap: break-word; /* IE7 */
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	-webkit-tab-size: 4;
+	tab-size: 4;
 }
 
-.cke_editable .marker
+.marker
 {
 	background-color: Yellow;
 }
 
-.cke_editable span[lang]
+span[lang]
 {
-   font-style: italic;
+	font-style: italic;
 }
 
-.cke_editable figure
+figure
 {
 	text-align: center;
 	border: solid 1px #ccc;
@@ -100,11 +117,18 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 	background: rgba(0,0,0,0.05);
 	padding: 10px;
 	margin: 10px 20px;
-	display: block; /* For IE8 */
+	display: inline-block;
 }
 
-.cke_editable figure figcaption
+figure > figcaption
 {
 	text-align: center;
 	display: block; /* For IE8 */
+}
+
+a > img {
+	padding: 1px;
+	margin: 1px;
+	border: none;
+	outline: 1px solid #0782C1;
 }
